@@ -1,4 +1,5 @@
-{ "name": "react-typescript-mobx",
+{
+  "name": "react-typescript-mobx",
   "version": "1.0.0",
   "license": "MIT",
   "description": "",
@@ -43,5 +44,9 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16"
   }
 }
