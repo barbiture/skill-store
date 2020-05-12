@@ -1,3 +1,7 @@
-import testComponent from './components/test-component'
+import {
+  exampleComponent,
+  Props,
+} from './components/example-component'
+import './export.css'
 
-export { testComponent }
+export { exampleComponent, Props }
