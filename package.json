@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/barbiture/input-range/issues"
+    "url": "https://github.com/barbiture/skill-store/issues"
   },
-  "homepage": "https://github.com/barbiture/input-range",
+  "homepage": "https://github.com/barbiture/skill-store",
   "description": "",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -101,6 +101,11 @@
     "@emotion/core": "^10.0.28"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/test"
+    "registry": "https://npm.pkg.github.com/skill-store"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/barbiture/skill-store.git",
+    "directory": "skill-store/input-range"
   }
 }
