@@ -1,7 +1,11 @@
 {
-  "name": "react-typescript-mobx",
+  "name": "input-range",
   "version": "1.0.0",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barbiture/input-range/issues"
+  },
+  "homepage": "https://github.com/barbiture/input-range",
   "description": "",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -95,5 +99,8 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.28"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
