@@ -7,33 +7,18 @@ export interface InputRangeProps {
   value: string
   originCurrency: string
 }
-const InputRange: FC<InputRangeProps> = ({
-  step,
-  min,
-  max,
-  originCurrency,
-}): ReactElement => {
+const InputRange: FC<InputRangeProps> = ({ step, min, max, originCurrency }): ReactElement => {
   const [value, setValue] = useState(min)
 
-  const handleSlider = ({
-    target,
-  }: ChangeEvent<HTMLInputElement>): void => {
+  const handleSlider = ({ target }: ChangeEvent<HTMLInputElement>): void => {
     setValue(target.value)
   }
   return (
     <>
       <p>
-        {value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}{' '}
-        {originCurrency}
+        {value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} {originCurrency}
       </p>
-      <input
-        type="range"
-        value={value}
-        onChange={handleSlider}
-        step={step}
-        max={max}
-        min={min}
-      />
+      <input type="range" value={value} onChange={handleSlider} step={step} max={max} min={min} />
     </>
   )
 }
