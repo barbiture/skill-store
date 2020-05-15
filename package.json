@@ -101,6 +101,6 @@
     "@emotion/core": "^10.0.28"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/test"
   }
 }
