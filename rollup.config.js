@@ -1,9 +1,8 @@
 import typescript from 'rollup-plugin-typescript2'
-import prettier from 'rollup-plugin-prettier'
+// import prettier from 'rollup-plugin-prettier'
 import commonjs from 'rollup-plugin-commonjs'
 import external from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
-import precss from 'precss'
 import resolve from 'rollup-plugin-node-resolve'
 import url from 'rollup-plugin-url'
 import svgr from '@svgr/rollup'
@@ -37,7 +36,6 @@ export default {
       extract: true,
       minimize: true,
       sourceMap: true,
-      plugins: [precss()],
     }),
     url(),
     svgr(),

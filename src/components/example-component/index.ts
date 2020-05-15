@@ -1,2 +1,2 @@
-import { exampleComponent, Props } from './example-component'
-export { exampleComponent, Props }
+import { ExampleComponent, Props } from './example-component'
+export { ExampleComponent, Props }

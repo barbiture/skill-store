@@ -1,7 +1,7 @@
 import {
-  exampleComponent,
+  ExampleComponent,
   Props,
 } from './components/example-component'
 import './export.css'
 
-export { exampleComponent, Props }
+export { ExampleComponent, Props }
