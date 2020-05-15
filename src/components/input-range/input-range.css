@@ -1,0 +1,16 @@
+::range-track {
+  /* /* background: var(--color-green); */
+  /* background: salmon; */
+  background: var(--color-smoke);
+  width: 100%;
+}
+
+::range-thumb {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: var(--color-white);
+  box-shadow: 0px 2px 4px var(--color-shadow);
+  width: var(--size-middle);
+  height: var(--size-middle);
+}

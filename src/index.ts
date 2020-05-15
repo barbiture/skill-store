@@ -1,7 +1,3 @@
-import {
-  ExampleComponent,
-  Props,
-} from './components/example-component'
+import { InputRange, InputRangeProps } from './components/input-range'
 import './export.css'
-
-export { ExampleComponent, Props }
+export { InputRange, InputRangeProps }
