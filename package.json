@@ -1,12 +1,12 @@
 {
-  "name": "@barbiture/skill-store",
-  "version": "1.0.1",
+  "name": "@barbiture/skill-store-ui",
+  "version": "1.0.2",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/barbiture/skill-store/issues"
+    "url": "https://github.com/barbiture/skill-store-ui/issues"
   },
   "author": "Roman Fedorenko",
-  "homepage": "https://github.com/barbiture/skill-store#readme",
+  "homepage": "https://github.com/barbiture/skill-store-ui#readme",
   "description": "",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -110,7 +110,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/barbiture/skill-store.git",
-    "directory": "skill-store/input-range"
+    "url": "ssh://git@github.com/barbiture/skill-store-ui.git",
+    "directory": "skill-store-ui/input-range"
   }
 }
