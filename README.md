@@ -1,6 +1,6 @@
 # UI Storybook
 
-Reusable react-typescript or anyweare type components
+Reusable react-typescript or anywhere components
 
 ## Installation
 
