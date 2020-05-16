@@ -1,11 +1,12 @@
 {
-  "name": "input-range",
+  "name": "@barbiture/skill-store",
   "version": "1.0.0",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/barbiture/skill-store/issues"
   },
-  "homepage": "https://github.com/barbiture/skill-store",
+  "author": "Roman Fedorenko",
+  "homepage": "https://github.com/barbiture/skill-store#readme",
   "description": "",
   "main": "build/index.js",
   "module": "build/index.es.js",

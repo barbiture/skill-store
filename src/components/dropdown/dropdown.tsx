@@ -43,7 +43,6 @@ const Dropdown: FC = (): ReactElement => {
     )
     updateDropdown()
   }
-
   useEffect((): void => {
     // FETCH
     setFetch(period)
@@ -74,7 +73,7 @@ const Dropdown: FC = (): ReactElement => {
             {periodItem.title}
           </div>
         )}
-        <div className="dl">{open && list}</div>
+        {open && <div className="dl">{list}</div>}
       </div>
     </>
   )
