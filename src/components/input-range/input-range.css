@@ -11,6 +11,10 @@
   box-shadow: 0px 2px 4px var(--color-shadow);
   width: 23px;
   height: 23px;
+  &:active,
+  &:hover {
+    background: var(--color-violet);
+  }
 }
 p {
   font-size: var(--f-size-big);

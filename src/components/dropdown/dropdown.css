@@ -2,18 +2,41 @@
   position: relative;
   padding: 5px;
   border-bottom: solid 2px var(--color-ghost);
+  .dd-arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  &-open {
+    .dd-arrow {
+      border-bottom: 6px solid var(--color-black);
+    }
+  }
+  &-close {
+    .dd-arrow {
+      border-top: 6px solid var(--color-black);
+    }
+  }
 }
 .ds {
   padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .dl {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 1px);
+  width: calc(100%);
   left: 0;
   height: auto;
   background-color: var(--color-white);
   box-shadow: 0px 2px 4px var(--color-shadow);
-  padding: 5px;
+  z-index: 1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
 }
 .di {
   font-size: var(--f-size-big);
@@ -21,6 +44,13 @@
   margin-right: -5px;
   padding: 5px;
   cursor: pointer;
+  &:not(.ds) {
+    padding: 10px;
+    &:hover {
+      color: var(--color-white);
+      background: var(--color-violet);
+    }
+  }
 }
 
 /* #arrows-examples div {

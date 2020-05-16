@@ -70,11 +70,12 @@ const Dropdown: FC<DropdownProps> = ({ labelName }): ReactElement => {
 
   return (
     <>
-      <div className="dd" ref={ulRef}>
+      <div className={`dd ${open ? 'dd-open' : 'dd-close'}`} ref={ulRef}>
         <div className="select-label">{labelName}</div>
         {periodItem && (
           <div className="di ds" onClick={handleSelect} id={periodItem.id.toString()}>
             {periodItem.title}
+            <div className="dd-arrow"></div>
           </div>
         )}
         {open && <div className="dl">{list}</div>}
