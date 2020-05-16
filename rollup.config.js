@@ -20,7 +20,7 @@ export default {
     },
     {
       file: pkg.module,
-      format: 'es',
+      format: 'esm',
       exports: 'named',
       sourcemap: true,
     },
@@ -49,12 +49,7 @@ export default {
     commonjs({
       include: ['node_modules/**'],
       namedExports: {
-        'node_modules/react/react.js': [
-          'Children',
-          'Component',
-          'PropTypes',
-          'createElement',
-        ],
+        'node_modules/react/react.js': ['Children', 'Component', 'PropTypes', 'createElement'],
         'node_modules/react-dom/index.js': ['render'],
       },
     }),
