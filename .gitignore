@@ -96,3 +96,5 @@ typings/
 
 # VSCODE
 .code-workspace
+
+storybook-static/
