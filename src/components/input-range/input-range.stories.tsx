@@ -6,16 +6,18 @@ import { InputRange } from '.'
 const stories = storiesOf('UI|Input-Range', module)
 
 stories.add(
-  'Default',
+  'Currency range',
   () => (
-    <InputRange
-      value="10000"
-      step={text('step', '1000')}
-      max={text('max', '10000000')}
-      min={text('min', '10000')}
-      originCurrency={text('originCurrency', '₽')}
-      labelName={text('labelName', 'Инвестирование')}
-    />
+    <div style={{ width: '218px' }}>
+      <InputRange
+        value="10000"
+        step={text('step', '1000')}
+        max={text('max', '10000000')}
+        min={text('min', '10000')}
+        originCurrency={text('originCurrency', '₽')}
+        labelName={text('labelName', 'Инвестирование')}
+      />
+    </div>
   ),
   {
     info: { inline: true },

@@ -39,6 +39,7 @@ export const GlobalStyle = () => (
         --f-size-large: 36px;
         --f-size-big: 24px;
         --f-size-middle: 17px;
+        --f-size-small: 14px;
       }
     `}
   />

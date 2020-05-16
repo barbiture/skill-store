@@ -15,4 +15,5 @@
 p {
   font-size: var(--f-size-big);
   margin: 5px;
+  text-align: left;
 }

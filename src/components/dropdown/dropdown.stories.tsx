@@ -4,9 +4,16 @@ import { text } from '@storybook/addon-knobs'
 import { Dropdown } from '.'
 const stories = storiesOf('UI|Dropdown', module)
 
-stories.add('Dropdown', () => <Dropdown labelName={text('labelNanme', 'Срок')} />, {
-  info: { inline: true },
-  text: `
+stories.add(
+  'Period dropdown',
+  () => (
+    <div style={{ width: '218px' }}>
+      <Dropdown labelName={text('labelNanme', 'Срок')} />
+    </div>
+  ),
+  {
+    info: { inline: true },
+    text: `
 
   ### Notes
 
@@ -15,9 +22,10 @@ stories.add('Dropdown', () => <Dropdown labelName={text('labelNanme', 'Срок'
   ### Usage
   ~~~js
   <Dropdown
-    text="Some text"
+    text="Срок"
   />
   ~~~
 
 `,
-})
+  }
+)
