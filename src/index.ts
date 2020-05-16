@@ -1,4 +1,4 @@
 import { InputRange, InputRangeProps } from './components/input-range'
-import { Dropdown } from './components/dropdown'
+import { Dropdown, DropdownProps } from './components/dropdown'
 import './export.css'
-export { InputRange, InputRangeProps, Dropdown }
+export { InputRange, InputRangeProps, Dropdown, DropdownProps }

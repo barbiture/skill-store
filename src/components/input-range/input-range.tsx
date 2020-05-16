@@ -6,8 +6,15 @@ export interface InputRangeProps {
   max: string
   value: string
   originCurrency: string
+  labelName: string
 }
-const InputRange: FC<InputRangeProps> = ({ step, min, max, originCurrency }): ReactElement => {
+const InputRange: FC<InputRangeProps> = ({
+  step,
+  min,
+  max,
+  originCurrency,
+  labelName,
+}): ReactElement => {
   const [value, setValue] = useState(min)
 
   const handleSlider = ({ target }: ChangeEvent<HTMLInputElement>): void => {
@@ -15,6 +22,7 @@ const InputRange: FC<InputRangeProps> = ({ step, min, max, originCurrency }): Re
   }
   return (
     <>
+      <div className="select-label">{labelName}</div>
       <p>
         {value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} {originCurrency}
       </p>
@@ -27,5 +35,6 @@ InputRange.defaultProps = {
   min: '10000',
   max: '10000000',
   originCurrency: '₽',
+  labelName: 'Инвестирование',
 }
 export default InputRange

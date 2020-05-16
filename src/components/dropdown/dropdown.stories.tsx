@@ -1,11 +1,10 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-// import { text } from '@storybook/addon-knobs'
-
+import { text } from '@storybook/addon-knobs'
 import { Dropdown } from '.'
 const stories = storiesOf('UI|Dropdown', module)
 
-stories.add('Dropdown', () => <Dropdown />, {
+stories.add('Dropdown', () => <Dropdown labelName={text('labelNanme', 'Срок')} />, {
   info: { inline: true },
   text: `
 

@@ -1,2 +1,2 @@
-import Dropdown from './dropdown'
-export { Dropdown }
+import Dropdown, { DropdownProps } from './dropdown'
+export { Dropdown, DropdownProps }

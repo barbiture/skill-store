@@ -6,7 +6,10 @@ interface Period {
   title: string
   selected: boolean
 }
-const Dropdown: FC = (): ReactElement => {
+export interface DropdownProps {
+  labelName: string
+}
+const Dropdown: FC<DropdownProps> = ({ labelName }): ReactElement => {
   const [periodFetch, setFetch] = useState<Array<Period>>([])
   const [periodItem, setItem] = useState<null | Period>(null)
   const [periodList, setList] = useState<Array<Period>>([])
@@ -68,8 +71,9 @@ const Dropdown: FC = (): ReactElement => {
   return (
     <>
       <div className="dd" ref={ulRef}>
+        <div className="select-label">{labelName}</div>
         {periodItem && (
-          <div className="di" onClick={handleSelect} id={periodItem.id.toString()}>
+          <div className="di ds" onClick={handleSelect} id={periodItem.id.toString()}>
             {periodItem.title}
           </div>
         )}
@@ -77,5 +81,8 @@ const Dropdown: FC = (): ReactElement => {
       </div>
     </>
   )
+}
+Dropdown.defaultProps = {
+  labelName: 'Срок',
 }
 export default Dropdown

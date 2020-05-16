@@ -14,6 +14,7 @@ stories.add(
       max={text('max', '10000000')}
       min={text('min', '10000')}
       originCurrency={text('originCurrency', '₽')}
+      labelName={text('labelName', 'Инвестирование')}
     />
   ),
   {
