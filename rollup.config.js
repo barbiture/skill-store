@@ -5,6 +5,7 @@ import external from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
 import resolve from 'rollup-plugin-node-resolve'
 import url from 'rollup-plugin-url'
+import cleaner from 'rollup-plugin-cleaner'
 import svgr from '@svgr/rollup'
 
 import pkg from './package.json'
@@ -31,6 +32,9 @@ export default {
     //   cwd: './.prettierrc',
     //   sourcemap: false,
     // }),
+    cleaner({
+      targets: ['./build/'],
+    }),
     postcss({
       modules: false,
       extract: true,
