@@ -9,7 +9,6 @@ import cleaner from 'rollup-plugin-cleaner'
 import svgr from '@svgr/rollup'
 
 import pkg from './package.json'
-
 export default {
   input: 'src/index.ts',
   output: [
@@ -47,7 +46,7 @@ export default {
     typescript({
       rollupCommonJSResolveHack: true,
       tsconfig: 'tsconfig.json',
-      exclude: ['src/**/*.stories.tsx', 'src/**/*.test.(tsx|ts)'],
+      exclude: ['src/**/*.stories.tsx', 'src/**/*.test.(tsx|ts)', 'src/__mocks__'],
       clean: true,
     }),
     commonjs({

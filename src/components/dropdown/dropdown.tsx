@@ -1,5 +1,5 @@
 import React, { FC, useState, ReactElement, MouseEvent, useEffect, useRef } from 'react'
-import period from '../../../__mocks__/period-select'
+// import period from '../../../__mocks__/period-select'
 import './dropdown.css'
 interface Period {
   id: number
@@ -8,8 +8,13 @@ interface Period {
 }
 export interface DropdownProps {
   labelName: string
+  period: {
+    id: number
+    title: string
+    selected: boolean
+  }[]
 }
-const Dropdown: FC<DropdownProps> = ({ labelName }): ReactElement => {
+const Dropdown: FC<DropdownProps> = ({ labelName, period }): ReactElement => {
   const [periodFetch, setFetch] = useState<Array<Period>>([])
   const [periodItem, setItem] = useState<null | Period>(null)
   const [periodList, setList] = useState<Array<Period>>([])
@@ -85,5 +90,22 @@ const Dropdown: FC<DropdownProps> = ({ labelName }): ReactElement => {
 }
 Dropdown.defaultProps = {
   labelName: 'Срок',
+  period: [
+    {
+      id: 0,
+      title: '3 месяца',
+      selected: true,
+    },
+    {
+      id: 1,
+      title: '6 месяцев',
+      selected: false,
+    },
+    {
+      id: 2,
+      title: '12 месяцев',
+      selected: false,
+    },
+  ],
 }
 export default Dropdown
