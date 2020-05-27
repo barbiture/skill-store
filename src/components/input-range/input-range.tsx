@@ -8,7 +8,7 @@ export interface InputRangeProps {
   originCurrency: string
   labelName: string
 }
-const InputRange: FC<InputRangeProps> = ({
+export const InputRange: FC<InputRangeProps> = ({
   step,
   min,
   max,

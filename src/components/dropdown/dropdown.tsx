@@ -1,5 +1,4 @@
 import React, { FC, useState, ReactElement, MouseEvent, useEffect, useRef } from 'react'
-// import period from '../../../__mocks__/period-select'
 import './dropdown.css'
 interface Period {
   id: number
@@ -14,7 +13,7 @@ export interface DropdownProps {
     selected: boolean
   }[]
 }
-const Dropdown: FC<DropdownProps> = ({ labelName, period }): ReactElement => {
+export const Dropdown: FC<DropdownProps> = ({ labelName, period }): ReactElement => {
   const [periodFetch, setFetch] = useState<Array<Period>>([])
   const [periodItem, setItem] = useState<null | Period>(null)
   const [periodList, setList] = useState<Array<Period>>([])

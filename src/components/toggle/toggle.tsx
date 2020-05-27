@@ -9,7 +9,12 @@ export interface ToggleProps {
     off: string
   }
 }
-const Toggle: FC<ToggleProps> = ({ toggleVal, toggleId, labelText, labelState }): ReactElement => {
+export const Toggle: FC<ToggleProps> = ({
+  toggleVal,
+  toggleId,
+  labelText,
+  labelState,
+}): ReactElement => {
   const [value, setValue] = useState<boolean>(toggleVal)
 
   const handleCheck = ({ target }: ChangeEvent<HTMLInputElement>): void => {

@@ -21,3 +21,6 @@ p {
   margin: 5px;
   text-align: left;
 }
+input {
+  background-color: transparent;
+}
